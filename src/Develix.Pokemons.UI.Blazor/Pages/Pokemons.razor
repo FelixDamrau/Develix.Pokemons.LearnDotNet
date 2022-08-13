@@ -17,7 +17,7 @@
     }
 </MudButton>
 
-<MudNumericField @bind-Value="pokedexId" />
+<MudNumericField @bind-Value="pokedexId" OnKeyDown="KeyPressedInInputField" />
 
 <PokemonCard Pokemon="pokedexState.Value.Pokemon" />
 
@@ -34,6 +34,12 @@
     {
         var action = new GetPokemonAction(pokedexId);
         dispatcher.Dispatch(action);
+    }
+
+    private void KeyPressedInInputField(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && !GetPokemonDisabled())
+            GetPokemon();
     }
 
     private bool GetPokemonDisabled() => pokedexState.Value.IsLoading;
