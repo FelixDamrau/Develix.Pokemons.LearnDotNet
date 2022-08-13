@@ -34,5 +34,5 @@
         dispatcher.Dispatch(action);
     }
 
-    private bool GetPokemonDisabled() => pokedexId is <= 0 or > 500;
+    private bool GetPokemonDisabled() => pokedexState.Value.IsLoading;
 }
