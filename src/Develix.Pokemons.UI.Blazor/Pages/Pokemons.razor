@@ -5,11 +5,8 @@
 
 @inherits Fluxor.Blazor.Web.Components.FluxorComponent
 
-@inject IDispatcher dispatcher;
-@inject IState<PokedexState> pokedexState;
-
-<MudButton  Disabled="GetPokemonDisabled()" OnClick="GetPokemon">
-    @if( pokedexState.Value.IsLoading)
+<MudButton Disabled="GetPokemonDisabled()" OnClick="GetPokemon">
+    @if (pokedexState.Value.IsLoading)
     {
         <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
         <MudText Class="ms-2">Loading</MudText>
@@ -20,13 +17,18 @@
     }
 </MudButton>
 
-<MudNumericField @bind-Value="pokedexId"></MudNumericField>
+<MudNumericField @bind-Value="pokedexId" />
 
 <PokemonCard Pokemon="pokedexState.Value.Pokemon" />
 
 @code {
-
     private int pokedexId = 1;
+
+    [Inject]
+    private IDispatcher dispatcher { get; set; } = null!;
+
+    [Inject]
+    IState<PokedexState> pokedexState { get; set; } = null!;
 
     private void GetPokemon()
     {
