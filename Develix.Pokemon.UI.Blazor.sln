@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.32804.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Develix.Pokemon.UI.Blazor", "src\Develix.Pokemon.UI.Blazor\Develix.Pokemon.UI.Blazor.csproj", "{750D7123-D63B-47C0-85BE-DBF17C7D10C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Develix.Pokemon.State", "src\Develix.Pokemon.State\Develix.Pokemon.State.csproj", "{6F2F5D0C-FDB4-476F-AC60-DE31B35042A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{750D7123-D63B-47C0-85BE-DBF17C7D10C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{750D7123-D63B-47C0-85BE-DBF17C7D10C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{750D7123-D63B-47C0-85BE-DBF17C7D10C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{750D7123-D63B-47C0-85BE-DBF17C7D10C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F2F5D0C-FDB4-476F-AC60-DE31B35042A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2F5D0C-FDB4-476F-AC60-DE31B35042A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2F5D0C-FDB4-476F-AC60-DE31B35042A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2F5D0C-FDB4-476F-AC60-DE31B35042A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD47D839-3582-40A2-9812-3C73980978DC}
+	EndGlobalSection
+EndGlobal
