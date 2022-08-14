@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.32804.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Develix.Pokemon.UI.Blazor", "src\Develix.Pokemon.UI.Blazor\Develix.Pokemon.UI.Blazor.csproj", "{750D7123-D63B-47C0-85BE-DBF17C7D10C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Develix.Pokemons.UI.Blazor", "src\Develix.Pokemons.UI.Blazor\Develix.Pokemons.UI.Blazor.csproj", "{750D7123-D63B-47C0-85BE-DBF17C7D10C2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Develix.Pokemon.State", "src\Develix.Pokemon.State\Develix.Pokemon.State.csproj", "{6F2F5D0C-FDB4-476F-AC60-DE31B35042A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Develix.Pokemons.State", "src\Develix.Pokemons.State\Develix.Pokemons.State.csproj", "{6F2F5D0C-FDB4-476F-AC60-DE31B35042A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
