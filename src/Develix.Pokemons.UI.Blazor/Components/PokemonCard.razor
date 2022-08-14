@@ -18,16 +18,3 @@
         </MudCardContent>
     </MudCard>
 }
-
-@code
-{
-    [Parameter]
-    [EditorRequired]
-    public Pokemon? Pokemon { get; set; }
-
-    private string GetPokemonTypeNames(Pokemon pokemon)
-    {
-        var types = pokemon.Types.Select(t => t.Type.Name);
-        return string.Join(", ", types);
-    }
-}
