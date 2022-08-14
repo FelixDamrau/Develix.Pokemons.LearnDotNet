@@ -4,18 +4,30 @@
 
 @inherits Fluxor.Blazor.Web.Components.FluxorComponent
 
-<MudButton Disabled="GetPokemonDisabled()" OnClick="GetPokemon">
-    @if (pokedexState.Value.IsLoading)
-    {
-        <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
-        <MudText Class="ms-2">Loading</MudText>
-    }
-    else
-    {
-        <MudText>Get Pokekon #@pokedexId</MudText>
-    }
-</MudButton>
-
-<MudNumericField @bind-Value="pokedexId" OnKeyDown="KeyPressedInInputField" />
-
-<PokemonCard Pokemon="pokedexState.Value.Pokemon" />
+<MudGrid>
+    <MudItem xs="12" md="4">
+        <MudPaper Class="pa-4 ma-2" Elevation="1">
+            <MudGrid>
+                <MudItem xs="12">
+                    <MudNumericField @bind-Value="pokedexId" Dense="true" Immediate="true" OnKeyDown="KeyPressedInInputField" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudButton Disabled="GetPokemonDisabled()" OnClick="GetPokemon">
+                        @if (pokedexState.Value.IsLoading)
+                        {
+                            <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                            <MudText Class="ms-2">Loading</MudText>
+                        }
+                        else
+                        {
+                            <MudText>Get Pokemon #@pokedexId</MudText>
+                        }
+                    </MudButton>
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+    </MudItem>
+    <MudItem xs="12" md="4">
+        <PokemonCard Pokemon="pokedexState.Value.Pokemon" />
+    </MudItem>
+</MudGrid>
