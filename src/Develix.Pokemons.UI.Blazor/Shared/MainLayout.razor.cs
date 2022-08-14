@@ -8,5 +8,5 @@ public partial class MainLayout
 
     private void DrawerToggle() => drawerOpen = !drawerOpen;
 
-    private static string GetVersion() => Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "Unkown version";
+    private static string GetVersion() => Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "Unknown version";
 }
