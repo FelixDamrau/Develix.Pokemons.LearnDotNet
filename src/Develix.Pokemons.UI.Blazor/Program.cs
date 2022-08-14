@@ -1,5 +1,6 @@
 ﻿using Develix.Pokemons.State.PokedexUseCase;
 using Develix.Pokemons.UI.Blazor;
+using Fluxor;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;
