@@ -8,7 +8,7 @@ public partial class PokemonCard
     [EditorRequired]
     public PokeApiNet.Pokemon? Pokemon { get; set; }
 
-    private string GetPokemonTypeNames(PokeApiNet.Pokemon pokemon)
+    private static string GetPokemonTypeNames(PokeApiNet.Pokemon pokemon)
     {
         var types = pokemon.Types.Select(t => t.Type.Name);
         return string.Join(", ", types);

@@ -2,14 +2,9 @@
 
 namespace Develix.Pokemon.State.PokedexUseCase;
 
-public class Effects
+public class Effects(PokeApiClient pokeApiClient)
 {
-    private readonly PokeApiClient pokeApiClient;
-
-    public Effects(PokeApiClient pokeApiClient)
-    {
-        this.pokeApiClient = pokeApiClient;
-    }
+    private readonly PokeApiClient pokeApiClient = pokeApiClient;
 
     [EffectMethod]
     public async Task HandleGetPokemonAction(GetPokemonAction action, IDispatcher dispatcher)
