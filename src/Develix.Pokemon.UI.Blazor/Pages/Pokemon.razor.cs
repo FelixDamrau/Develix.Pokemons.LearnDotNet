@@ -1,11 +1,11 @@
-﻿using Develix.Pokemons.State.PokedexUseCase;
+﻿using Develix.Pokemon.State.PokedexUseCase;
 using Fluxor;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
-namespace Develix.Pokemons.UI.Blazor.Pages;
+namespace Develix.Pokemon.UI.Blazor.Pages;
 
-public partial class Pokemons
+public partial class Pokemon
 {
     private int pokedexId = 1;
 

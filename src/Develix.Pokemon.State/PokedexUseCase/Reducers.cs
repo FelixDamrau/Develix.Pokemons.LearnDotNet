@@ -1,4 +1,4 @@
-﻿namespace Develix.Pokemons.State.PokedexUseCase;
+﻿namespace Develix.Pokemon.State.PokedexUseCase;
 
 public static class Reducers
 {
