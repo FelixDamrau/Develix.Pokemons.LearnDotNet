@@ -1,15 +1,14 @@
 ﻿using Microsoft.AspNetCore.Components;
-using PokeApiNet;
 
-namespace Develix.Pokemons.UI.Blazor.Components;
+namespace Develix.Pokemon.UI.Blazor.Components;
 
 public partial class PokemonCard
 {
     [Parameter]
     [EditorRequired]
-    public Pokemon? Pokemon { get; set; }
+    public PokeApiNet.Pokemon? Pokemon { get; set; }
 
-    private string GetPokemonTypeNames(Pokemon pokemon)
+    private static string GetPokemonTypeNames(PokeApiNet.Pokemon pokemon)
     {
         var types = pokemon.Types.Select(t => t.Type.Name);
         return string.Join(", ", types);

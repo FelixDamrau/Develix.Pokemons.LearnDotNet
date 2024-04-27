@@ -1,5 +1,5 @@
-﻿using Develix.Pokemons.State.PokedexUseCase;
-using Develix.Pokemons.UI.Blazor;
+﻿using Develix.Pokemon.State.PokedexUseCase;
+using Develix.Pokemon.UI.Blazor;
 using Fluxor;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;

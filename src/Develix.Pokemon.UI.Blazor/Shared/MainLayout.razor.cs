@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace Develix.Pokemons.UI.Blazor.Shared;
+namespace Develix.Pokemon.UI.Blazor.Shared;
 
 public partial class MainLayout
 {
