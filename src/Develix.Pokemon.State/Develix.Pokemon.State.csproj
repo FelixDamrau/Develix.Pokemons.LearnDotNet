@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Fluxor" Version="5.8.0" />
-    <PackageReference Include="PokeApiNet" Version="3.0.10" />
+    <PackageReference Include="Fluxor" Version="5.9.1" />
+    <PackageReference Include="PokeApiNet" Version="4.0.0" />
   </ItemGroup>
 
 </Project>
